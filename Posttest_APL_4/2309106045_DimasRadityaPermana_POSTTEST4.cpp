@@ -3,8 +3,8 @@
 #include <cstdlib> 
 using namespace std;
 
-const string merk_awal = "Oppo";
-const int batasMerk = 10;
+string merk_awal = "Oppo";
+int batasMerk = 10;
 
 struct Stok {
     int jumlah;
@@ -28,7 +28,7 @@ void clearTerminal()
     system("cls");
 }
 
-bool cekMerk(merk listMerk[], int jumlahMerk, const string &merkBaru);
+bool cekMerk(merk listMerk[], int jumlahMerk, string &merkBaru);
 bool login();
 
 int main() 
